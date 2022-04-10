@@ -1,0 +1,51 @@
+{
+  "name": "remark-postcss",
+  "version": "1.0.0",
+  "description": "Remark plugin to bundle a style tag with MDX content via postcss.",
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist/types/index.d.ts",
+    "dist/index.js"
+  ],
+  "scripts": {
+    "build": "npm-run-all --parallel build:app build:types",
+    "build:app": "rollup -c",
+    "build:types": "tsc -p tsconfig.build.json",
+    "format:files": "prettier --ignore-path .gitignore .",
+    "format:check": "npm run format:files -- --check",
+    "format": "npm run format:files -- --write",
+    "lint": "eslint .",
+    "prepare": "husky install",
+    "test": "jest --passWithNoTests",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false",
+    "validate": "npm-run-all --parallel format:check lint test typecheck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SSHari/remark-postcss.git"
+  },
+  "keywords": [
+    "unified",
+    "markdown",
+    "mdx",
+    "remark",
+    "remark-plugin",
+    "plugin",
+    "postcss",
+    "css",
+    "style-tag",
+    "style",
+    "tag"
+  ],
+  "author": "Sai Hari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SSHari/remark-postcss/issues"
+  },
+  "homepage": "https://github.com/SSHari/remark-postcss#readme",
+  "devDependencies": {
+    "ssh-dev-scripts": "^1.1.0"
+  }
+}
