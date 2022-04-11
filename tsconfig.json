@@ -1,6 +1,7 @@
 {
   "extends": "ssh-dev-scripts/src/tsconfig.json",
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "baseUrl": "src",
     "declarationDir": "dist/types",
     "outDir": "dist",

@@ -1,5 +1,5 @@
 {
-  "name": "remark-postcss",
+  "name": "remark-mdx-postcss",
   "version": "1.0.0",
   "description": "Remark plugin to bundle a style tag with MDX content via postcss.",
   "sideEffects": false,
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SSHari/remark-postcss.git"
+    "url": "git+https://github.com/SSHari/remark-mdx-postcss.git"
   },
   "keywords": [
     "unified",
@@ -42,10 +42,23 @@
   "author": "Sai Hari",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SSHari/remark-postcss/issues"
+    "url": "https://github.com/SSHari/remark-mdx-postcss/issues"
   },
-  "homepage": "https://github.com/SSHari/remark-postcss#readme",
+  "homepage": "https://github.com/SSHari/remark-mdx-postcss#readme",
   "devDependencies": {
-    "ssh-dev-scripts": "^1.1.0"
+    "@types/tailwindcss": "^3.0.10",
+    "autoprefixer": "^10.4.4",
+    "cssnano": "^5.1.7",
+    "postcss": "^8.4.12",
+    "remark": "^14.0.2",
+    "remark-mdx": "^2.1.1",
+    "ssh-dev-scripts": "^1.1.0",
+    "tailwindcss": "^3.0.23"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.12"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9"
   }
 }
