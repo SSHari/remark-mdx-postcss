@@ -1,4 +1,10 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": ["src/**/*.spec.ts*", "src/**/__tests__/**"]
+  "exclude": ["src/**/*.spec.ts*", "src/**/__tests__/**"],
+  "compilerOptions": {
+    "emitDeclarationOnly": false,
+    "module": "commonjs",
+    "removeComments": true,
+    "target": "es2018"
+  }
 }
