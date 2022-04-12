@@ -6,9 +6,11 @@
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "files": [
-    "dist/types/index.d.ts",
-    "dist/index.js"
+    "dist"
   ],
+  "publishConfig": {
+    "tag": "latest"
+  },
   "scripts": {
     "build": "npm-run-all --parallel build:app build:types",
     "build:app": "rollup -c",
